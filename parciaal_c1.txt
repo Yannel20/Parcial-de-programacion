@@ -1,0 +1,91 @@
+
+Parcial de progra 
+
+Ximena Letizia Moreno Díaz
+Camila Yaneli Romero Calderón 
+
+Ejercicio 1
+
+Razonamiento que utilizamos para resolver el ejercicio y razón por la que lo empleamos
+
+Usamos POO ya que consideramos que es factible, pues permite desarrollar lo que el ejercicio nos pide, lo cual es modelar pacientes y el consultorio de manera intuitiva, a la vez facilita el encapsulamiento de datos, mejorando el mantenimiento del código. Además, la reutilización de métodos simplifican la adición de nuevas funcionalidades y escalan el sistema sin grandes modificaciones. En conclusión, esta estructura sigue criterios que nos permiten concretar lo solicitado, iniciamos
+definiendo la clase y algunos metodos. La POO permite estructurar claramente las relaciones entre pacientes, consultas y el consultorio.
+
+Clases:
+
+Paciente: Representa a cada paciente con su nombre, motivo de consulta y fecha asignada para la consulta.
+ConsultorioMedico: Administra a los pacientes y las consultas. Tiene un diccionario de pacientes registrados y una lista de pacientes en la sala de espera.
+Registro de Pacientes:
+
+Cuando un paciente llega, el sistema verifica si ya tiene una consulta previa.
+Si el paciente ya está registrado, se le envía a la sala de espera. Si no, se registra el paciente y se le asigna una fecha de consulta.
+Sala de Espera:
+
+Los pacientes que ya tienen una consulta previa son enviados a la sala de espera en lugar de volver a ser registrados.
+Asignación de Fechas:
+
+El sistema asigna automáticamente una fecha de consulta al registrar un nuevo paciente. En este caso, se utiliza una fecha fija, pero en una implementación real, se podría calcular según la disponibilidad.
+Visualización:
+
+El sistema permite mostrar tanto los pacientes registrados (con sus fechas de consulta) como los pacientes en la sala de espera.
+
+Ejercicio 2
+
+Razonamiento que utilizamos para resolver el ejercicio y razón por la que lo empleamos
+
+El sistema automatiza el seguimiento de préstamos y devoluciones, reduciendo el trabajo manual.
+Organización: La POO permite organizar claramente los datos y operaciones relacionados con libros, personas y préstamos.
+Escalabilidad: Puedes agregar más funciones o expandir el sistema fácilmente sin modificar mucho el código existente.
+
+Clases:
+
+Persona: Representa a la persona que realiza el préstamo, con su nombre y número de tarjeta.
+
+Libro: Representa un libro en la biblioteca, con su título, autor y un estado que indica si está disponible para préstamo.
+
+Prestamo: Contiene información sobre el préstamo de un libro, incluyendo la persona que lo toma, el libro prestado, la fecha de retiro y la fecha límite de devolución.
+Biblioteca: Administra los libros y los préstamos. Permite agregar libros, realizar préstamos y mostrar los préstamos actuales.
+Préstamos:
+
+Cuando un libro es prestado, se cambia su estado a False para indicar que no está disponible.
+La fecha límite de devolución se calcula automáticamente como 14 días después de la fecha de retiro.
+Disponibilidad de libros:
+
+Antes de prestar un libro, el sistema verifica si está disponible. Si no lo está, informa al usuario que el libro no está disponible.
+
+Registro de Préstamos: El sistema mantiene un registro de todos los préstamos actuales, que se pueden mostrar en cualquier momento.
+
+Ejercicio 3 
+
+(El código proporciona una base sólida para un sistema de gestión de una tienda, pero es necesario realizar mejoras para adaptarlo a un escenario real. Algunas de las mejoras posibles incluyen:
+
+Mayor detalle en la gestión del inventario: Controlar stock mínimo, máximo, alertas de productos bajos, etc.
+
+Gestión de proveedores más avanzada: Negociar precios, realizar pedidos, etc.
+
+Incorporación de clientes: Crear perfiles de clientes, analizar hábitos de compra, etc.
+
+Generación de reportes: Crear informes de ventas, inventario, etc.
+
+Persistencia de datos: Guardar la información en una base de datos o archivos.
+
+Interfaz de usuario: Desarrollar una interfaz para facilitar la interacción con el sistema.)
+
+
+Ejercicio 4 
+
+(Creación de una clase Animal: La definimos como una  estructura para representar a un animal, con sus atributos (nombre, especie, edad, etc.) y métodos (como _str_ para mostrar la información del animal).
+
+Creación de una lista para almacenar animales: Utilizamos una lista de Python para guardar todos los objetos Animal que creamos.
+
+Funciones para gestionar animales: Creamos funciones para agregar nuevos animales a la lista, listar todos los animales o listar solo aquellos que están en tratamiento.
+
+Ejemplo de uso: Mostramos cómo crear objetos Animal, agregarlos a la lista y utilizar las funciones para mostrar la información de los animales.)
+
+
+
+
+
+
+
+
